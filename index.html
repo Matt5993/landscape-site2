@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landscape Image Consulting — Expert Landscape Consulting for the Midwest</title>
+  <meta name="description" content="Professional landscape consulting for commercial and residential properties. 28 years of experience. Serving Cincinnati and the Midwest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">🌿</div>
+        Landscape Image
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="membership.html">The Groundwork</a>
+        <a href="#booking" class="nav-cta">Book Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🌳 Serving Commercial &amp; Residential Clients Across the Midwest</div>
+        <h1>Expert Landscape Consulting You Can Trust</h1>
+        <p>With nearly 30 years of commercial landscaping experience, we help property managers and homeowners make smarter decisions about their landscapes — saving money and building value.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Book a Consultation →</a>
+          <a href="#services" class="btn btn-outline">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Our Services</h2>
+        <p>Choose the consulting package that fits your needs. From one-time advice to ongoing landscape management.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🌱</div>
+          <h3>Basic Consultation</h3>
+          <div class="service-price">$99 <span>one-time</span></div>
+          <div class="price-note">Starting at — contact for custom quote</div>
+          <ul class="service-features">
+            <li>Email-based expert advice</li>
+            <li>Plant selection recommendations</li>
+            <li>Maintenance tips &amp; scheduling</li>
+            <li>Photo review of your property</li>
+            <li>Written summary &amp; action items</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary" data-tier="basic">Get Started</a>
+        </div>
+        <div class="service-card featured fade-in">
+          <div class="service-icon">🌿</div>
+          <h3>Standard Consultation</h3>
+          <div class="service-price">$249 <span>one-time</span></div>
+          <div class="price-note">Starting at — contact for custom quote</div>
+          <ul class="service-features">
+            <li>Everything in Basic, plus:</li>
+            <li>Detailed intake &amp; property assessment</li>
+            <li>45-minute video consultation</li>
+            <li>Written landscape plan</li>
+            <li>Plant &amp; material specifications</li>
+            <li>Seasonal maintenance calendar</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary" data-tier="standard">Get Started</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🌳</div>
+          <h3>Premium Advisory</h3>
+          <div class="service-price">$499 <span>/month</span></div>
+          <div class="price-note">Starting at — contact for custom quote</div>
+          <ul class="service-features">
+            <li>Everything in Standard, plus:</li>
+            <li>Monthly check-in calls</li>
+            <li>Seasonal planning &amp; adjustments</li>
+            <li>Priority email support</li>
+            <li>Unlimited questions</li>
+            <li>Vendor &amp; contractor referrals</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary" data-tier="premium">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Our Work</h2>
+        <p>A selection of commercial and residential landscape projects we've consulted on.</p>
+      </div>
+      <div class="portfolio-filters fade-in">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-1.jpg" alt="Commercial landscape project - corporate campus">
+          <div class="portfolio-overlay">
+            <h4>Corporate Campus Grounds</h4>
+            <p>Commercial · Full landscape overhaul</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-2.jpg" alt="Commercial landscape project - office park">
+          <div class="portfolio-overlay">
+            <h4>Office Park Renewal</h4>
+            <p>Commercial · Seasonal planting plan</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-3.jpg" alt="Commercial landscape project - retail center">
+          <div class="portfolio-overlay">
+            <h4>Retail Center Beautification</h4>
+            <p>Commercial · Maintenance consulting</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="residential">
+          <img src="images/portfolio/residential-1.jpg" alt="Residential landscape project - backyard">
+          <div class="portfolio-overlay">
+            <h4>Backyard Transformation</h4>
+            <p>Residential · Design consultation</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="residential">
+          <img src="images/portfolio/residential-2.jpg" alt="Residential landscape project - front yard">
+          <div class="portfolio-overlay">
+            <h4>Front Yard Curb Appeal</h4>
+            <p>Residential · Plant selection</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="residential">
+          <img src="images/portfolio/residential-3.jpg" alt="Residential landscape project - garden">
+          <div class="portfolio-overlay">
+            <h4>Garden Design</h4>
+            <p>Residential · Full landscape plan</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/maintenance-1.jpg" alt="Landscape maintenance project">
+          <div class="portfolio-overlay">
+            <h4>Ongoing Maintenance Program</h4>
+            <p>Commercial · Year-round advisory</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="residential">
+          <img src="images/portfolio/plants-1.jpg" alt="Plant selection project">
+          <div class="portfolio-overlay">
+            <h4>Native Plant Selection</h4>
+            <p>Residential · Ohio-native species</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">🌿</div>
+        <div class="about-content fade-in">
+          <h2>Meet Matt</h2>
+          <p>With nearly three decades of hands-on experience in commercial landscaping, Matt brings a rare depth of expertise to every consultation. After owning and operating a successful commercial landscape business for 18 years in the Cincinnati, Ohio area, he's seen it all — from large-scale corporate campus maintenance to intricate seasonal planting rotations that keep properties looking sharp year-round.</p>
+          <p>Now, through Landscape Image Consulting, Matt is channeling that expertise into helping property managers, business owners, and homeowners across the Midwest make smarter decisions about their landscapes.</p>
+          <p>Whether you're dealing with a neglected commercial property that needs a turnaround plan, trying to choose the right plants for Ohio's unpredictable climate, or just want a professional set of eyes on your maintenance program — Matt's been there and done it.</p>
+          <div class="credentials">
+            <div class="credential-badge">🏢 28 Years Experience</div>
+            <div class="credential-badge">🌿 18 Years Business Owner</div>
+            <div class="credential-badge">🧪 Licensed Pesticide Applicator</div>
+            <div class="credential-badge">📍 Cincinnati, OH</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Book a Consultation</h2>
+        <p>Tell us about your property and needs, then schedule a follow-up call.</p>
+      </div>
+      <div class="booking-wrapper fade-in">
+        <div class="booking-steps">
+          <div class="step-indicator active" id="step1indicator">
+            <div class="step-num">1</div>
+            <span>Your Details</span>
+          </div>
+          <div class="step-indicator" id="step2indicator">
+            <div class="step-num">2</div>
+            <span>Schedule Call</span>
+          </div>
+          <div class="step-indicator" id="step3indicator">
+            <div class="step-num">3</div>
+            <span>Confirmation</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Intake Form -->
+        <div class="booking-form" id="step1">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientName">Full Name *</label>
+              <input type="text" id="clientName" required placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label for="clientEmail">Email *</label>
+              <input type="email" id="clientEmail" required placeholder="john@example.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientPhone">Phone</label>
+              <input type="tel" id="clientPhone" placeholder="(555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="propertyType">Property Type *</label>
+              <select id="propertyType" required>
+                <option value="">Select type...</option>
+                <option value="commercial">Commercial</option>
+                <option value="residential">Residential</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="propertySize">Approximate Property Size (sq ft)</label>
+              <input type="text" id="propertySize" placeholder="e.g. 5,000">
+            </div>
+            <div class="form-group">
+              <label for="serviceTier">Preferred Service Tier</label>
+              <select id="serviceTier">
+                <option value="">Select tier...</option>
+                <option value="basic">Basic Consultation — $99</option>
+                <option value="standard">Standard Consultation — $249</option>
+                <option value="premium">Premium Advisory — $499/mo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Services of Interest</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="services" value="maintenance"> Landscape Maintenance</label>
+              <label><input type="checkbox" name="services" value="plants"> Plant Selection</label>
+              <label><input type="checkbox" name="services" value="design"> Design Consultation</label>
+              <label><input type="checkbox" name="services" value="seasonal"> Seasonal Planning</label>
+              <label><input type="checkbox" name="services" value="pest"> Pest &amp; Disease Management</label>
+              <label><input type="checkbox" name="services" value="other"> Other</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="clientNeeds">Describe Your Needs *</label>
+            <textarea id="clientNeeds" required placeholder="Tell us about your property and what you're looking for. The more detail, the better we can help."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Property Photos (optional)</label>
+            <div class="file-upload" id="fileUpload">
+              <div>📷 <strong>Click to upload</strong> or drag photos here</div>
+              <p>JPG, PNG up to 10MB each. Multiple files allowed.</p>
+              <input type="file" id="photoUpload" multiple accept="image/*">
+            </div>
+            <div class="file-previews" id="filePreviews"></div>
+          </div>
+          <button class="btn btn-primary" id="toStep2" style="width:100%;justify-content:center;">Continue to Scheduling →</button>
+        </div>
+
+        <!-- Step 2: Calendar -->
+        <div class="booking-form" id="step2" style="display:none;">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button class="calendar-nav" id="calPrev">‹</button>
+              <h3 id="calTitle">Week of March 4, 2026</h3>
+              <button class="calendar-nav" id="calNext">›</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:32px;">
+            <button class="btn btn-outline" id="backToStep1" style="flex:1;justify-content:center;color:var(--gray-700);border-color:var(--gray-300);">← Back</button>
+            <button class="btn btn-primary" id="toStep3" style="flex:2;justify-content:center;" disabled>Confirm Booking →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Confirmation -->
+        <div class="booking-form" id="step3" style="display:none;">
+          <div class="confirmation">
+            <div class="check-icon">✓</div>
+            <h3>Consultation Booked!</h3>
+            <p>We've received your request. Matt will review your information and you'll receive a confirmation email shortly.</p>
+            <div class="confirmation-details" id="confirmationDetails"></div>
+            <div id="stripePayment" style="margin-top:24px;"></div>
+            <a href="#home" class="btn btn-primary" style="margin-top:16px;">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Get in Touch</h2>
+        <p>Have a quick question? Reach out directly — no commitment required.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>(513) 324-1495</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>matt@landscapeimageconsulting.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Cincinnati, Ohio<br>Serving the Midwest</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday – Friday: 9:00 AM – 5:00 PM EST<br>Weekends: By appointment</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form fade-in">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Name *</label>
+              <input type="text" id="contactName" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email *</label>
+              <input type="email" id="contactEmail" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" required placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🌿 Landscape Image Consulting</h3>
+          <p>Expert landscape consulting for commercial and residential properties. Nearly 30 years of experience helping the Midwest grow better.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#booking">Book Consultation</a>
+          <a href="membership.html">The Groundwork</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#services">Landscape Maintenance</a>
+          <a href="#services">Plant Selection</a>
+          <a href="#services">Design Consultation</a>
+          <a href="#services">Seasonal Planning</a>
+          <a href="#services">Pest Management</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Landscape Image LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <h3 id="modalTitle">Success!</h3>
+      <p id="modalMessage">Your message has been sent.</p>
+      <button class="btn btn-primary" onclick="document.getElementById('successModal').classList.remove('active')">OK</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/stripe-config.js"></script>
+</body>
+</html>
