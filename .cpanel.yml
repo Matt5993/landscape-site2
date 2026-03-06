@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/Matt/public_html/
+    - export DEPLOYPATH=/home/landndbj/public_html/
     - mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/images/portfolio
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp membership.html $DEPLOYPATH
