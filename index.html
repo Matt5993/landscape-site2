@@ -39,6 +39,7 @@
       <div class="hero-content">
         <div class="hero-badge">🌳 Serving Commercial &amp; Residential Clients Across the Midwest</div>
         <h1>Expert Landscape Consulting You Can Trust</h1>
+        <p class="hero-tagline"><em>"We don't perform the service — we make the service perform better."</em></p>
         <p>With nearly 30 years of commercial landscaping experience, we help property managers and homeowners make smarter decisions about their landscapes — saving money and building value.</p>
         <div class="hero-buttons">
           <a href="#booking" class="btn btn-primary">Book a Consultation →</a>
@@ -53,52 +54,92 @@
     <div class="container">
       <div class="section-header fade-in">
         <h2>Our Services</h2>
-        <p>Choose the consulting package that fits your needs. From one-time advice to ongoing landscape management.</p>
+        <p>Professional landscape consulting for commercial properties across the Midwest. Residential packages also available.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card fade-in">
-          <div class="service-icon">🌱</div>
-          <h3>Basic Consultation</h3>
-          <div class="service-price">$99 <span>one-time</span></div>
-          <div class="price-note">Starting at — contact for custom quote</div>
-          <ul class="service-features">
-            <li>Email-based expert advice</li>
-            <li>Plant selection recommendations</li>
-            <li>Maintenance tips &amp; scheduling</li>
-            <li>Photo review of your property</li>
-            <li>Written summary &amp; action items</li>
-          </ul>
-          <a href="#booking" class="btn btn-primary" data-tier="basic">Get Started</a>
+
+      <!-- Commercial Services -->
+      <div class="commercial-services fade-in">
+        <div class="commercial-header">
+          <div class="commercial-icon">🏢</div>
+          <div>
+            <h3>Commercial Clients</h3>
+            <p>We handle all of your landscape management needs — from on-site visits and contractor oversight to contract review and seasonal planning. Whether you manage an apartment complex, office park, retail center, or corporate campus, we make sure your grounds are maintained right.</p>
+          </div>
         </div>
-        <div class="service-card featured fade-in">
-          <div class="service-icon">🌿</div>
-          <h3>Standard Consultation</h3>
-          <div class="service-price">$249 <span>one-time</span></div>
-          <div class="price-note">Starting at — contact for custom quote</div>
-          <ul class="service-features">
-            <li>Everything in Basic, plus:</li>
-            <li>Detailed intake &amp; property assessment</li>
-            <li>45-minute video consultation</li>
-            <li>Written landscape plan</li>
-            <li>Plant &amp; material specifications</li>
-            <li>Seasonal maintenance calendar</li>
-          </ul>
-          <a href="#booking" class="btn btn-primary" data-tier="standard">Get Started</a>
+        <ul class="commercial-features">
+          <li>On-site property visits &amp; landscape audits</li>
+          <li>Landscape contractor &amp; vendor contract review</li>
+          <li>Full landscape management oversight</li>
+          <li>Seasonal maintenance planning &amp; scheduling</li>
+          <li>Plant selection, design &amp; material specifications</li>
+          <li>Vendor evaluation, bidding &amp; contractor oversight</li>
+          <li>Pest, disease &amp; turf management consulting</li>
+          <li>Budget planning &amp; cost reduction strategies</li>
+          <li>Irrigation &amp; drainage assessment</li>
+          <li>Ongoing advisory &amp; monthly check-ins</li>
+        </ul>
+        <div class="commercial-cta">
+          <p class="commercial-pricing">Every commercial property is different — <strong>contact us for custom pricing</strong></p>
+          <a href="#contact" class="btn btn-primary">Contact Us for Pricing →</a>
         </div>
-        <div class="service-card fade-in">
-          <div class="service-icon">🌳</div>
-          <h3>Premium Advisory</h3>
-          <div class="service-price">$499 <span>/month</span></div>
-          <div class="price-note">Starting at — contact for custom quote</div>
-          <ul class="service-features">
-            <li>Everything in Standard, plus:</li>
-            <li>Monthly check-in calls</li>
-            <li>Seasonal planning &amp; adjustments</li>
-            <li>Priority email support</li>
-            <li>Unlimited questions</li>
-            <li>Vendor &amp; contractor referrals</li>
-          </ul>
-          <a href="#booking" class="btn btn-primary" data-tier="premium">Get Started</a>
+      </div>
+
+      <!-- Residential Services (Dropdown) -->
+      <div class="residential-services fade-in">
+        <button class="residential-toggle" id="residentialToggle">
+          <div class="residential-toggle-content">
+            <div class="residential-icon">🏡</div>
+            <div>
+              <h3>Residential Packages</h3>
+              <p>Click to view our homeowner consulting packages</p>
+            </div>
+          </div>
+          <span class="toggle-arrow" id="toggleArrow">▼</span>
+        </button>
+        <div class="residential-dropdown" id="residentialDropdown">
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🌱</div>
+              <h3>Basic Consultation</h3>
+              <div class="service-price">$99 <span>one-time</span></div>
+              <ul class="service-features">
+                <li>Email-based expert advice</li>
+                <li>Plant selection recommendations</li>
+                <li>Maintenance tips &amp; scheduling</li>
+                <li>Photo review of your property</li>
+                <li>Written summary &amp; action items</li>
+              </ul>
+              <a href="#booking" class="btn btn-primary" data-tier="basic">Get Started</a>
+            </div>
+            <div class="service-card featured">
+              <div class="service-icon">🌿</div>
+              <h3>Standard Consultation</h3>
+              <div class="service-price">$249 <span>one-time</span></div>
+              <ul class="service-features">
+                <li>Everything in Basic, plus:</li>
+                <li>Detailed intake &amp; property assessment</li>
+                <li>45-minute video consultation</li>
+                <li>Written landscape plan</li>
+                <li>Plant &amp; material specifications</li>
+                <li>Seasonal maintenance calendar</li>
+              </ul>
+              <a href="#booking" class="btn btn-primary" data-tier="standard">Get Started</a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🌳</div>
+              <h3>Premium Advisory</h3>
+              <div class="service-price">$499 <span>/month</span></div>
+              <ul class="service-features">
+                <li>Everything in Standard, plus:</li>
+                <li>Monthly check-in calls</li>
+                <li>Seasonal planning &amp; adjustments</li>
+                <li>Priority email support</li>
+                <li>Unlimited questions</li>
+                <li>Vendor &amp; contractor referrals</li>
+              </ul>
+              <a href="#booking" class="btn btn-primary" data-tier="premium">Get Started</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -113,64 +154,62 @@
       </div>
       <div class="portfolio-filters fade-in">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
       </div>
       <div class="portfolio-grid" id="portfolioGrid">
         <div class="portfolio-item fade-in" data-category="commercial">
-          <img src="images/portfolio/commercial-1.jpg" alt="Commercial landscape project - corporate campus">
+          <img src="images/portfolio/commercial-apartments-1.jpg" alt="Apartment complex landscaping with manicured grounds">
           <div class="portfolio-overlay">
-            <h4>Corporate Campus Grounds</h4>
-            <p>Commercial · Full landscape overhaul</p>
+            <h4>Apartment Complex Grounds</h4>
+            <p>Commercial · Full landscape management plan</p>
           </div>
         </div>
         <div class="portfolio-item fade-in" data-category="commercial">
-          <img src="images/portfolio/commercial-2.jpg" alt="Commercial landscape project - office park">
+          <img src="images/portfolio/commercial-office-1.jpg" alt="Office building with professional landscaping">
           <div class="portfolio-overlay">
-            <h4>Office Park Renewal</h4>
-            <p>Commercial · Seasonal planting plan</p>
+            <h4>Corporate Office Landscaping</h4>
+            <p>Commercial · Seasonal planting &amp; maintenance</p>
           </div>
         </div>
         <div class="portfolio-item fade-in" data-category="commercial">
-          <img src="images/portfolio/commercial-3.jpg" alt="Commercial landscape project - retail center">
+          <img src="images/portfolio/commercial-building-1.jpg" alt="Commercial building with landscaped entrance">
+          <div class="portfolio-overlay">
+            <h4>Commercial Property Entrance</h4>
+            <p>Commercial · Curb appeal consulting</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-grounds-1.jpg" alt="Manicured commercial grounds with green lawn">
+          <div class="portfolio-overlay">
+            <h4>Property Grounds Overhaul</h4>
+            <p>Commercial · Complete landscape redesign</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-apartments-2.jpg" alt="Apartment community with professional landscaping">
+          <div class="portfolio-overlay">
+            <h4>Residential Community Grounds</h4>
+            <p>Commercial · HOA landscape advisory</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-plants-1.jpg" alt="Commercial property with ornamental plantings">
+          <div class="portfolio-overlay">
+            <h4>Ornamental Plant Installation</h4>
+            <p>Commercial · Plant selection &amp; design</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in" data-category="commercial">
+          <img src="images/portfolio/commercial-retail-1.jpg" alt="Retail center with landscaped grounds">
           <div class="portfolio-overlay">
             <h4>Retail Center Beautification</h4>
             <p>Commercial · Maintenance consulting</p>
           </div>
         </div>
-        <div class="portfolio-item fade-in" data-category="residential">
-          <img src="images/portfolio/residential-1.jpg" alt="Residential landscape project - backyard">
-          <div class="portfolio-overlay">
-            <h4>Backyard Transformation</h4>
-            <p>Residential · Design consultation</p>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in" data-category="residential">
-          <img src="images/portfolio/residential-2.jpg" alt="Residential landscape project - front yard">
-          <div class="portfolio-overlay">
-            <h4>Front Yard Curb Appeal</h4>
-            <p>Residential · Plant selection</p>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in" data-category="residential">
-          <img src="images/portfolio/residential-3.jpg" alt="Residential landscape project - garden">
-          <div class="portfolio-overlay">
-            <h4>Garden Design</h4>
-            <p>Residential · Full landscape plan</p>
-          </div>
-        </div>
         <div class="portfolio-item fade-in" data-category="commercial">
-          <img src="images/portfolio/maintenance-1.jpg" alt="Landscape maintenance project">
+          <img src="images/portfolio/commercial-campus-1.jpg" alt="Corporate campus with maintained landscape">
           <div class="portfolio-overlay">
-            <h4>Ongoing Maintenance Program</h4>
+            <h4>Corporate Campus Program</h4>
             <p>Commercial · Year-round advisory</p>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in" data-category="residential">
-          <img src="images/portfolio/plants-1.jpg" alt="Plant selection project">
-          <div class="portfolio-overlay">
-            <h4>Native Plant Selection</h4>
-            <p>Residential · Ohio-native species</p>
           </div>
         </div>
       </div>
@@ -260,12 +299,13 @@
               <input type="text" id="propertySize" placeholder="e.g. 5,000">
             </div>
             <div class="form-group">
-              <label for="serviceTier">Preferred Service Tier</label>
+              <label for="serviceTier">Service Interest</label>
               <select id="serviceTier">
-                <option value="">Select tier...</option>
-                <option value="basic">Basic Consultation — $99</option>
-                <option value="standard">Standard Consultation — $249</option>
-                <option value="premium">Premium Advisory — $499/mo</option>
+                <option value="">Select...</option>
+                <option value="commercial">Commercial — Contact for pricing</option>
+                <option value="basic">Residential — Basic ($99)</option>
+                <option value="standard">Residential — Standard ($249)</option>
+                <option value="premium">Residential — Premium ($499/mo)</option>
               </select>
             </div>
           </div>

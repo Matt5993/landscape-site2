@@ -882,3 +882,170 @@ section:nth-child(even) { background: var(--off-white); }
   .section-header { margin-bottom: 40px; }
   .portfolio-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Hero Tagline --- */
+.hero-tagline {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+/* --- Commercial Services --- */
+.commercial-services {
+  background: linear-gradient(135deg, var(--green-dark), var(--blue-dark));
+  color: var(--white);
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 32px;
+}
+
+.commercial-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.commercial-icon {
+  font-size: 3rem;
+}
+
+.commercial-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.commercial-header p {
+  opacity: 0.9;
+  font-size: 1.05rem;
+}
+
+.commercial-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 32px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.commercial-features li {
+  padding-left: 28px;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.commercial-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--green-light);
+  font-weight: 700;
+}
+
+.commercial-cta {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.commercial-pricing {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.commercial-cta .btn-primary {
+  background: var(--white);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 36px;
+}
+
+.commercial-cta .btn-primary:hover {
+  background: var(--green-pale);
+  transform: translateY(-2px);
+}
+
+/* --- Residential Dropdown --- */
+.residential-services {
+  border: 2px solid var(--gray-200);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.residential-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: var(--gray-100);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.residential-toggle:hover {
+  background: var(--gray-200);
+}
+
+.residential-toggle-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+.residential-icon {
+  font-size: 2.2rem;
+}
+
+.residential-toggle h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+  color: var(--gray-800);
+}
+
+.residential-toggle p {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+}
+
+.toggle-arrow {
+  font-size: 1.2rem;
+  color: var(--gray-500);
+  transition: transform 0.3s ease;
+}
+
+.toggle-arrow.open {
+  transform: rotate(180deg);
+}
+
+.residential-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.residential-dropdown.open {
+  max-height: 2000px;
+}
+
+.residential-dropdown .services-grid {
+  padding: 32px;
+}
+
+@media (max-width: 768px) {
+  .commercial-services { padding: 32px 20px; }
+  .commercial-features { grid-template-columns: 1fr; }
+  .commercial-header { flex-direction: column; text-align: center; }
+  .residential-toggle { padding: 20px; }
+  .residential-dropdown .services-grid { padding: 20px; }
+}

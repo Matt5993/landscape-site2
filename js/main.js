@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
+  // --- Residential dropdown toggle ---
+  const residentialToggle = document.getElementById('residentialToggle');
+  const residentialDropdown = document.getElementById('residentialDropdown');
+  const toggleArrow = document.getElementById('toggleArrow');
+  if (residentialToggle) {
+    residentialToggle.addEventListener('click', () => {
+      residentialDropdown.classList.toggle('open');
+      toggleArrow.classList.toggle('open');
+    });
+  }
+
   // --- Smooth scroll for service tier buttons ---
   document.querySelectorAll('[data-tier]').forEach(btn => {
     btn.addEventListener('click', (e) => {
