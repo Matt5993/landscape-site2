@@ -884,6 +884,10 @@ section:nth-child(even) { background: var(--off-white); }
 }
 
 /* --- Hero Tagline --- */
+.hero-title {
+  color: var(--green-light) !important;
+}
+
 .hero-tagline {
   font-size: 1.25rem;
   color: rgba(255,255,255,0.95);
@@ -917,9 +921,18 @@ section:nth-child(even) { background: var(--off-white); }
   margin-bottom: 4px;
 }
 
-.commercial-header p {
+.commercial-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  margin-bottom: 28px;
+}
+
+.services-list-heading {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
   opacity: 0.9;
-  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 .commercial-features {
